@@ -6,4 +6,8 @@ fun main() {
         Hello! My name is $botName.
         I was created in $birthYear.
     """.trimIndent())
+
+    println("Please, remind me your name.")
+    val userName: String = readln()
+    println("What a great name you have, $userName!")
 }
