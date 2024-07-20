@@ -12,4 +12,10 @@ fun main() {
     println("Please, remind me your name.")
     val userName: String = readln()
     println("What a great name you have, $userName!")
+
+    // Stage 3
+    println("""
+        Let me guess your age.
+        Enter remainders of dividing your age by 3, 5 and 7.
+    """.trimIndent())
 }
