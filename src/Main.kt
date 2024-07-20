@@ -18,4 +18,7 @@ fun main() {
         Let me guess your age.
         Enter remainders of dividing your age by 3, 5 and 7.
     """.trimIndent())
+
+    val (remainder3, remainder5, remainder7) = Array(3) { readln().toInt() }
+    val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
 }
