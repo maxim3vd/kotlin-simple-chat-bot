@@ -31,4 +31,5 @@ fun main() {
     for (i in start..end) {
         println("$i!")
     }
+    println("Completed, have a nice day!")
 }
