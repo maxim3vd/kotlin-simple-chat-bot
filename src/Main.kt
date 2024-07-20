@@ -21,4 +21,6 @@ fun main() {
 
     val (remainder3, remainder5, remainder7) = Array(3) { readln().toInt() }
     val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
+
+    println("Your age is $age; that's a good time to start programming!")
 }
