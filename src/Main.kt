@@ -5,6 +5,10 @@ fun botWelcome(botName: String, birthYear: Int) {
     """.trimIndent())
 }
 
+fun printYourName(userName: String) {
+    println("What a great name you have, $userName!")
+}
+
 fun main() {
     // Stage 1
     botWelcome(botName = "Codus", birthYear = 2042)
@@ -12,7 +16,7 @@ fun main() {
     // Stage 2
     println("Please, remind me your name.")
     val userName: String = readln()
-    println("What a great name you have, $userName!")
+    printYourName(userName)
 
     // Stage 3
     println("""
