@@ -31,5 +31,14 @@ fun main() {
     for (i in start..end) {
         println("$i!")
     }
-    println("Completed, have a nice day!")
+
+    // Stage 5
+    println("""
+        Let's test your programming knowledge.
+        Why do we use methods?
+        1. To repeat a statement multiple times.
+        2. To decompose a program into several small subroutines.
+        3. To determine the execution time of a program.
+        4. To interrupt the execution of a program.
+    """.trimIndent())
 }
