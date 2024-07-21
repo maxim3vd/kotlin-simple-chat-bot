@@ -9,6 +9,11 @@ fun printYourName(userName: String) {
     println("What a great name you have, $userName!")
 }
 
+fun guessTheAge(remainder3: Int, remainder5: Int, remainder7: Int) {
+    val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
+    println("Your age is $age; that's a good time to start programming!")
+}
+
 fun main() {
     // Stage 1
     botWelcome(botName = "Codus", birthYear = 2042)
@@ -25,9 +30,7 @@ fun main() {
     """.trimIndent())
 
     val (remainder3, remainder5, remainder7) = Array(3) { readln().toInt() }
-    val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
-
-    println("Your age is $age; that's a good time to start programming!")
+    guessTheAge(remainder3, remainder5, remainder7)
 
     // Stage 4
     println("Now I will prove to you that I can count to any number you want.")
