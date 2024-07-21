@@ -20,6 +20,24 @@ fun learningNumbers(number: Int) {
     }
 }
 
+fun multipleChoice() {
+    println("""
+        Let's test your programming knowledge.
+        Why do we use methods?
+        1. To repeat a statement multiple times.
+        2. To decompose a program into several small subroutines.
+        3. To determine the execution time of a program.
+        4. To interrupt the execution of a program.
+    """.trimIndent())
+
+    do {
+        val answer: Int = readln().toInt()
+        if (answer != 2) {
+            println("Please, try again.")
+        }
+    } while (answer != 2)
+}
+
 fun main() {
     // Stage 1
     botWelcome(botName = "Codus", birthYear = 2042)
@@ -44,21 +62,6 @@ fun main() {
     learningNumbers(number)
 
     // Stage 5
-    println("""
-        Let's test your programming knowledge.
-        Why do we use methods?
-        1. To repeat a statement multiple times.
-        2. To decompose a program into several small subroutines.
-        3. To determine the execution time of a program.
-        4. To interrupt the execution of a program.
-    """.trimIndent())
-
-    do {
-        val answer: Int = readln().toInt()
-        if (answer != 2) {
-            println("Please, try again.")
-        }
-    } while (answer != 2)
-
+    multipleChoice()
     println("Congratulations, have a nice day!")
 }
