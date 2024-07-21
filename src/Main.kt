@@ -14,6 +14,12 @@ fun guessTheAge(remainder3: Int, remainder5: Int, remainder7: Int) {
     println("Your age is $age; that's a good time to start programming!")
 }
 
+fun learningNumbers(number: Int) {
+    for (i in 0..number) {
+        println("$i!")
+    }
+}
+
 fun main() {
     // Stage 1
     botWelcome(botName = "Codus", birthYear = 2042)
@@ -34,11 +40,8 @@ fun main() {
 
     // Stage 4
     println("Now I will prove to you that I can count to any number you want.")
-    val start = 0
-    val end: Int = readln().toInt()
-    for (i in start..end) {
-        println("$i!")
-    }
+    val number: Int = readln().toInt()
+    learningNumbers(number)
 
     // Stage 5
     println("""
