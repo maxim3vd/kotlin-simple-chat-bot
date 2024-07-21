@@ -41,4 +41,11 @@ fun main() {
         3. To determine the execution time of a program.
         4. To interrupt the execution of a program.
     """.trimIndent())
+
+    do {
+        val answer: Int = readln().toInt()
+        if (answer != 2) {
+            println("Please, try again.")
+        }
+    } while (answer != 2)
 }
