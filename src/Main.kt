@@ -1,12 +1,13 @@
-fun main() {
-    // Stage 1
-    val botName = "Codus"
-    val birthYear = 2042
-
+fun botWelcome(botName: String, birthYear: Int) {
     println("""
         Hello! My name is $botName.
         I was created in $birthYear.
     """.trimIndent())
+}
+
+fun main() {
+    // Stage 1
+    botWelcome(botName = "Codus", birthYear = 2042)
 
     // Stage 2
     println("Please, remind me your name.")
