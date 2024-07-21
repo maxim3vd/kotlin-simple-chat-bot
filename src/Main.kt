@@ -48,4 +48,6 @@ fun main() {
             println("Please, try again.")
         }
     } while (answer != 2)
+
+    println("Congratulations, have a nice day!")
 }
