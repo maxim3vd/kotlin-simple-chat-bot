@@ -1,38 +1,26 @@
-fun main() {
-    // Stage 1
-    val botName = "Codus"
-    val birthYear = 2042
-
+fun botWelcome(botName: String, birthYear: Int) {
     println("""
         Hello! My name is $botName.
         I was created in $birthYear.
     """.trimIndent())
+}
 
-    // Stage 2
-    println("Please, remind me your name.")
-    val userName: String = readln()
+fun printYourName(userName: String) {
     println("What a great name you have, $userName!")
+}
 
-    // Stage 3
-    println("""
-        Let me guess your age.
-        Enter remainders of dividing your age by 3, 5 and 7.
-    """.trimIndent())
-
-    val (remainder3, remainder5, remainder7) = Array(3) { readln().toInt() }
+fun guessTheAge(remainder3: Int, remainder5: Int, remainder7: Int) {
     val age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
-
     println("Your age is $age; that's a good time to start programming!")
+}
 
-    // Stage 4
-    println("Now I will prove to you that I can count to any number you want.")
-    val start = 0
-    val end: Int = readln().toInt()
-    for (i in start..end) {
+fun learningNumbers(number: Int) {
+    for (i in 0..number) {
         println("$i!")
     }
+}
 
-    // Stage 5
+fun multipleChoice() {
     println("""
         Let's test your programming knowledge.
         Why do we use methods?
@@ -48,6 +36,32 @@ fun main() {
             println("Please, try again.")
         }
     } while (answer != 2)
+}
 
+fun main() {
+    // Stage 1
+    botWelcome(botName = "Codus", birthYear = 2042)
+
+    // Stage 2
+    println("Please, remind me your name.")
+    val userName: String = readln()
+    printYourName(userName)
+
+    // Stage 3
+    println("""
+        Let me guess your age.
+        Enter remainders of dividing your age by 3, 5 and 7.
+    """.trimIndent())
+
+    val (remainder3, remainder5, remainder7) = Array(3) { readln().toInt() }
+    guessTheAge(remainder3, remainder5, remainder7)
+
+    // Stage 4
+    println("Now I will prove to you that I can count to any number you want.")
+    val number: Int = readln().toInt()
+    learningNumbers(number)
+
+    // Stage 5
+    multipleChoice()
     println("Congratulations, have a nice day!")
 }
